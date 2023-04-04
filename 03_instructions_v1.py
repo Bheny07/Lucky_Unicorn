@@ -1,9 +1,8 @@
-""" Yes/No checking function
-based on 01_yes_n0_v3
-"""
+""" Took function from component 03_v1 as the basis for this new function which
+incorporates both yes/no and shows instructions"""
 
 
-# Functions go here...
+# Yes/No checking function
 def yes_no(question_text):
     while True:
 
@@ -25,11 +24,20 @@ def yes_no(question_text):
             print("Please answer 'yes' or 'no'")
 
 
-# Main routine
+# function to display instructions
+def instructions():
+    print("**** How to Play ****")
+    print()
+    print("The Rules of The Game will Go Here")
+    print()
+    print("Program continues")
+    print()
 
 
-show_instructions = yes_no("Have you played this game before?: ")
-print(f"You entered '{show_instructions}'")
-print()
-having_fun = yes_no("Are you having fun?: ")
-print(f"You entered '{having_fun}'")
+# Main Routine
+played_before = yes_no("Have you played this game before?: ")
+
+if played_before == "no":
+    instructions()
+else:
+    print("Program continues")
