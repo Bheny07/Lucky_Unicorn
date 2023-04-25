@@ -1,5 +1,7 @@
 """Component 3 (random tokens) v3
-Calculate user balance based on random selection of tokens"""
+Format currency
+Ensure odds favour the house - 10% chance of unicorn and 30% chance for each of
+donkey, zebra, or horse"""
 
 import random
 
