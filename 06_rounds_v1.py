@@ -43,6 +43,4 @@ while play_again != "x":
             token = "horse"
             balance -= .5
 
-    # output
-    print(f"Starting Balance = ${test_amount:.2f}")
-    print(f"Final Balance = ${balance:.2f}")
+
